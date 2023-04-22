@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Vrindavan";
@@ -9,15 +11,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tour App"),
+        title: Text("Medical App"),
       ),
       body: Center(
-        // ignore: avoid_unnecessary_containers
         child: Container(
           child: Text("Welcome to $days days of flutter by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
