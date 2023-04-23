@@ -6,19 +6,13 @@ class MyTheme {
       primarySwatch: Colors.deepPurple,
       fontFamily: GoogleFonts.lato().fontFamily,
       appBarTheme: AppBarTheme(
-        color: Colors.white,
+        color: Colors.deepPurple,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black),
-        textTheme: Theme.of(context).textTheme,
+        titleTextStyle: Theme.of(context).textTheme.titleLarge,
       ));
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
-      primarySwatch: Colors.deepPurple,
-      fontFamily: GoogleFonts.lato().fontFamily,
-      appBarTheme: AppBarTheme(
-        color: Colors.white,
-        elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.black),
-        textTheme: Theme.of(context).textTheme,
-      ));
+        brightness: Brightness.dark,
+      );
 }
